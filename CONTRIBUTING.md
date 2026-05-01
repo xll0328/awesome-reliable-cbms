@@ -22,13 +22,21 @@ A paper is a good fit if it changes at least one of these questions:
 
 ## Entry Format
 
-Use this format:
+Use this README format:
 
 ```markdown
-- **Paper Title** - Author et al., Venue Year. One-sentence reason the paper matters for CBM reliability.
+- [Paper Title](paper-url) - Author et al., Venue Year. One-sentence reason the paper matters for CBM reliability. [code](code-url)
 ```
 
 If the paper is a preprint, mark it as a preprint rather than presenting it as settled evidence.
+
+Also add a row to `papers.csv` when the paper is part of the curated map:
+
+```csv
+"Title","Year","Venue","Lens","Maturity","Paper URL","Code URL","Why it matters"
+```
+
+Use an empty `Code URL` field if no official implementation is available.
 
 ## Review Checklist
 
@@ -39,3 +47,4 @@ Before adding a paper, check:
 - Is the link stable?
 - Does the paper fit the section where it is being added?
 - Does the entry make clear whether the evidence is mature, emerging, or frontier?
+- Does the entry explain why the paper matters, rather than merely listing it?
